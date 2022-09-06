@@ -1,7 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Home, DetailItem, OnBoarding} from '../screen';
-
 const Stack = createNativeStackNavigator();
 
 const StackNavigation = () => {
@@ -18,7 +17,7 @@ const StackNavigation = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="DetailItem"
+        name="Detail Item"
         component={DetailItem}
         options={{headerShown: false}}
       />

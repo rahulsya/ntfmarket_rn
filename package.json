@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start --reset-cache",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build-apk":"npx react-native run-android --variant=release",
+    "build-release":"cd ./android && ./gradlew bundleRelease && cd .."
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.12",

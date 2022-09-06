@@ -92,15 +92,15 @@ const Home = ({navigation}) => {
   const renderContent = ({item}) => {
     switch (item.key) {
       case 'header':
-        return renderHeader();
+        return <View key={item.id}>{renderHeader()}</View>;
       case 'categories':
-        return renderCategories();
+        return <View key={item.id}>{renderCategories()}</View>;
       case 'products':
-        return renderProducts();
+        return <View key={item.id}>{renderProducts()}</View>;
       case 'sales':
-        return renderSales();
+        return <View key={item.id}>{renderSales()}</View>;
       default:
-        return <></>;
+        return <View key={item.id}></View>;
     }
   };
 

@@ -1,10 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function DetailItem() {
+export default function DetailItem({route}) {
+  console.log(route.params);
   return (
     <View>
-      <Text>DetailItem</Text>
+      <Text>DetailItem {route.params.id}</Text>
     </View>
   );
 }
